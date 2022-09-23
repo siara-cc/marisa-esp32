@@ -2,11 +2,19 @@
 
 Marisa is a library for building and querying compressed static dictionaries. The original library for Microprocessors [can be found here](https://github.com/siara-cc/marisa-esp32).
 
+## Applications
+
+- Spell check
+- Autocomplete
+- Compression as in [Unishox compression library](https://github.com/siara-cc/Unishox)
+
+Although Spell check and Autocomplete may sound far fetched for ESP32, it is quite useful to have these features for implementing a messaging system over BLE or LORA such as the [Meshtastic library](https://github.com/meshtastic/Meshtastic-device), since the input devices that may be available for keying in messages could be quite restrictive.
+
 ## Getting started
 
 The example provided with this Arduino library has a dictionary that was created using Marisa consisting of 487,568 words/phrases. Almost all English words or phrases should be found in this dictionary.  Flash this example into any ESP32 dev board and query the dictionary by typing some English word.
 
-Marisa provided 4 functions: lookup, reverse_lookup, common_prefix_search, predictive_search and these can be tried using the given example.  Screenshots of how each of these function work are shown below:
+Marisa provides 4 functions: `lookup`, `reverse_lookup`, `common_prefix_search`, `predictive_search` and these can be tried out using the given example.  Screenshots of how each of these function work are shown below:
 
 - lookup() and reverse_lookup()
 
@@ -39,7 +47,7 @@ g++ -o print_file_as_string print_file_as_string.cpp
 ./print_file_as_string mydict.bin > string.txt
 ```
 
-Then copy paste the contents of `string.txt` into your sketch as shown below and loaded as `marisa::Trie` object as shown below:
+Then copy paste the contents of `string.txt` into your sketch and load it as `marisa::Trie` object as shown below:
 
 ```
 #define KEY_COUNT <enter number of entries>
