@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map SQLite3
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+marisa	KEYWORD1
+Trie	KEYWORD1
+Agent	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+lookup	KEYWORD2
+reverse_lookup	KEYWORD2
+common_prefix_search	KEYWORD2
+predictive_search	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
