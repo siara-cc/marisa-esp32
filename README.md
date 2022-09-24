@@ -5,6 +5,8 @@ Marisa is a library for building and querying compressed static dictionaries. Th
 ## Applications
 
 - Compressing large string arrays
+- Storing highly compressed geospatial location names
+- Storing label dictionaries for AI/ML
 - Spell check
 - Autocomplete
 - Compression as in [Unishox compression library](https://github.com/siara-cc/Unishox)
